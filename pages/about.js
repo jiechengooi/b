@@ -3,9 +3,7 @@ import Head from "next/head";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
-import Avatar from "@material-ui/core/Avatar";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
-import Hidden from "@material-ui/core/Hidden";
 import Layout from "../components/Layout";
 
 
@@ -41,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function About(props) {
+export default function About() {
   const classes = useStyles();
   const theme = useTheme();
   const matchesMD = useMediaQuery(theme.breakpoints.down("md"));
